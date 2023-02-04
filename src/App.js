@@ -1,10 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Form from "./Components/Form/Form";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>React App</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Form />} />
+      </Routes>
+    </Router>
   );
 };
 
