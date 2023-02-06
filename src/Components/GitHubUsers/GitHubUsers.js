@@ -3,9 +3,11 @@ import axios from "axios";
 
 const GitHubUsers = () => {
   const [users, setUsers] = useState([]);
+  const [profiles, setProfiles] = useState([]);
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
   const [perPage, setPerPage] = useState(10);
+  const [id, setid] = useState(0);
 
   const fetchGitHubUsers = async () => {
     try {
@@ -22,6 +24,22 @@ const GitHubUsers = () => {
       console.log(err);
     }
   };
+
+  // find Github profile
+  const findGithubProfile = async () => {
+    try {
+      const res = await axios.get(`http://localhost:4000/findGithubUserProfile`, {
+        params: {
+          id: Number(id),
+        },
+      });
+      console.log(res.data.data);
+      setProfiles(res.data.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
 
   return (
     <div>
@@ -67,10 +85,10 @@ const GitHubUsers = () => {
           />
         </div>
         <button type="button" onClick={fetchGitHubUsers}>
-          Search
+          Search Users
         </button>
       </form>
-      {/* create table to display data */}
+      {/* create table to display user data */}
       {users && users.length > 0 ? (
         <table>
           <thead>
@@ -98,8 +116,27 @@ const GitHubUsers = () => {
           </thead>
         </table>
       ) : (
-        <p className="found">No users found</p>
+        <p className="found">Enter a valid username</p>
       )}
+
+      {/* GitHub Profiles */}
+      <h1>GitHub Profiles</h1>
+      <form className="user_form">
+        <div>
+          <input
+            type="number"
+            name="search"
+            placeholder="Enter Github User Id"
+            value={id}
+            onChange={(e) => setid(e.target.value)}
+            required
+          />
+
+          <button type="button" onClick={findGithubProfile}>
+            Search Profile
+          </button>
+        </div>
+      </form>
     </div>
   );
 };
