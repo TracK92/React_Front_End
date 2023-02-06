@@ -1,70 +1,183 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+ 
+  <h3><b>Coding Challenge</b></h3>
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
 
-### `npm start`
+# 📗 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+    - [Preview](#preview)
+- [💻 Getting Started](#getting-started)
+  - [Link to Backend](#link-to-backend)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- PROJECT DESCRIPTION -->
 
-### `npm test`
+# 📖 [Coding Challenge] <a name="about-project"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Coding Challenge** is an application with two parts. The first part involves building an API that allows users to create phone numbers that are saved to the database. An access code is created by the back-end and delivered to the user via SMS. Upon entering the access code, validation is done by the back-end and the user is granted access. The second part involves fetching data from the GitHub API regarding users and displaying it on the front-end. Certain filters are added such as username, page, and displays per page.
 
-### `npm run build`
+## 🛠 Built With <a name="built-with"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tech Stack <a name="tech-stack"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express</a></li>
+  </ul>
+</details>
 
-### `npm run eject`
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://firebase.google.com/">Firebase</a></li>
+  </ul>
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+<summary>SMS Service</summary>
+  <ul>
+    <li><a href="https://www.twilio.com/">Twilio</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- Features -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Key Features <a name="key-features"></a>
 
-## Learn More
+- **[User creates a phone number]**
+- **[Access code is generated]**
+- **[Phone number is validated using access code]**
+- **[A list of GitHub users is access and displayed]**
+- **[The list is filtered by name, page, and per_page parameters]**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- Preview -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Preview <a name="preview"></a>
 
-### Code Splitting
+<div align="center">
+  <img src="accessCodes.png" alt="screenshot" width="100%"  height="auto" />
+   <img src="githubUsers.png" alt="screenshot" width="100%"  height="auto" />
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- GETTING STARTED -->
 
-### Making a Progressive Web App
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To get a local copy up and running, follow these steps.
 
-### Advanced Configuration
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+In order to run this project you need:
 
-### Deployment
+```sh
+- git
+- node
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Link to Backend
 
-### `npm run build` fails to minify
+- [Link to Backend (API)](https://github.com/TracK92/express_back_end.git)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Setup
+
+Clone this repository to your desired folder:
+
+```bash
+$ git clone https://github.com/TracK92/react_front_end.git
+```
+
+Clone the backend repository to your desired folder:
+
+```bash
+$ git clone https://github.com/TracK92/express_back_end.git
+```
+
+
+### Install
+
+Install these projects with:
+
+```bash
+  cd react_front_end
+  npm install
+```
+
+```bash
+  cd express_back_end
+  npm install
+```
+
+### Usage
+
+To run the projects in two separate terminals, execute the following command:
+
+```sh
+  npm run start
+```
+
+N/B: The back-end runs on port 4000 whereas the front-end often runs on port 3000. If you are running both projects on the same machine, you will need to ensure that the front-end project is running on any port but 4000.
+
+#### Access Codes
+- Ensure that the back-end is running at all times. This message will appear on the terminal if the back-end is running: `Example app listening at http://localhost:4000`. Note that any errors on the front-end may cause the back-end to stop running. If this happens, you will need to restart the back-end. Use the following commands: ```Ctrl + C``` to stop the back-end and ```npm run start``` to start the back-end again.
+- On the front-end, there is a navigation bar (see the preview above) that contains links to the two pages. The Access Codes is the first page. On this page, you will enter a phone number(use +254726993667 as this number is verified by Twilio and, therefore, will not throw any errors. I have console logged the data, which also includes the auto-generated access code). Once you click the "Create Access Code" button, check the console for the pertinent data. Insert the access code in the second input field and click the "Validate Access Code" button. You can test the API by entering different access codes.
+
+#### GitHub Users
+- On the front-end, click on the GitHub Users link on the navigation bar. You will see input fields: username, Page, and Per Page. You can filter the list by name, page, and per_page parameters. The default values are: name = "", page = 1, and per_page = 10. You can change these values and click the "Search" button to see the results. 
+N/B: Ensure that the back-end is still running, particularly if you run into any errors.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## Authors
+
+👤 **Tracey Kadenyi**
+
+- GitHub: [@TracK92](https://github.com/TracK92)
+- LinkedIn: [@Tracey Kadenyi](https://www.linkedin.com/in/Tracey-Kadenyi/)
+- Twitter: [@traci_K7](https://twitter.com/traci_k7)
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a ⭐️ if you like this project!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
