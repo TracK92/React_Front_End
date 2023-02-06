@@ -43,7 +43,7 @@ const GitHubUsers = () => {
 
   return (
     <div>
-      <h1>GitHub Users</h1>
+      <h1 style={{textAlign: "center"}}>GitHub Users</h1>
       <form className="user_form">
         <div>
           <input
