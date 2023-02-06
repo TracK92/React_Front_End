@@ -57,7 +57,7 @@ const Form = () => {
   };
 
   return (
-    <form>
+    <form className="codes_form">
       {/* phone number */}
       <label htmlFor="phone_number">Enter Phone Number</label>
       <input
