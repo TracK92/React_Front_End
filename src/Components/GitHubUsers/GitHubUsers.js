@@ -9,8 +9,7 @@ const GitHubUsers = () => {
 
   const fetchGitHubUsers = async () => {
     try {
-      // const userInfo = { q: q };
-      const res = await axios.get("http://localhost:4000/searchUsers", {
+      const res = await axios.get("http://localhost:4000/searchGithubUsers", {
         params: {
           q: q,
           page: page,
