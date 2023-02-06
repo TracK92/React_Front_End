@@ -42,6 +42,8 @@ const Form = () => {
         alert("Success")
         // save phone number to local storage
         localStorage.setItem("phoneNumber", phoneNumber);
+        setPhoneNumber("");
+        setAccessCode("");
       }
     }
     catch (err) {
@@ -59,13 +61,14 @@ const Form = () => {
         type="text"
         id="phone_number"
         name="phone_number"
-        placeholder="123-45-678"
-        // pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        placeholder="+1-430-123-4567"
+        pattern="^\+1-[0-9]{3}-[0-9]{3}-[0-9]{4}$"
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}
         required
       />
-      <p className="format">Format: 123-45-678</p>
+      <p className="format">Format: +1-123-456-7890</p>
+      {/* <p className="format">Format: 123-45-678</p> */}
       <button type="button" onClick={createAccessCode}>Create Access Code</button>
       {/* access code */}
       <label htmlFor="access_code">Enter Access Code</label>
