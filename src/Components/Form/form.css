@@ -1,8 +1,4 @@
-body {
-  overflow: hidden !important;
-}
-
-form {
+.codes_form {
   height: 100vh;
   padding: 20px;
   display: flex;
@@ -11,12 +7,12 @@ form {
   justify-content: center;
 }
 
-input {
+.codes_form input {
   display: block;
   padding: 10px;
 }
 
-button {
+.codes_form button {
   padding: 10px;
   margin: 10px 0 30px;
 }
@@ -24,4 +20,41 @@ button {
 .format {
   font-size: 0.7rem;
   font-style: italic;
+}
+
+/* Github Users */
+
+.avatar {
+  width: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px;
+
+}
+
+table,
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.user_form input {
+  padding: 5px;
+}
+
+.found {
+  text-align: center;
 }
