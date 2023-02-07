@@ -18,7 +18,7 @@ const Profile = () => {
 
   return (
     <div>
-      <h1>GitHub Profile</h1>
+      <h1 style={{textAlign: "center", marginTop: "100px"}}>GitHub Profile</h1>
       <form className="user_form" onSubmit={findGithubProfile}>
         <div>
           <input
@@ -66,7 +66,7 @@ const Profile = () => {
           </tbody>
         </table>
       ) : (
-        <p className="found">Enter a valid username</p>
+        <p className="found">Enter a valid ID</p>
       )}
     </div>
   );

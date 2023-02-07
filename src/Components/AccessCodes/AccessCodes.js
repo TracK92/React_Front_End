@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./form.css";
 
-const Form = () => {
+const AccessCodes = () => {
   const [phoneNumber, setPhoneNumber] = React.useState("");
 
   const [accessCode, setAccessCode] = React.useState("");
@@ -58,6 +58,7 @@ const Form = () => {
 
   return (
     <form className="codes_form">
+      <h1>Access Codes</h1>
       {/* phone number */}
       <label htmlFor="phone_number">Enter Phone Number</label>
       <input
@@ -96,4 +97,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default AccessCodes;

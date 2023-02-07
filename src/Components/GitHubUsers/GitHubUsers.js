@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import "../AccessCodes/form.css"
+
 const GitHubUsers = () => {
   const [users, setUsers] = useState([]);
   const [q, setQ] = useState("");
@@ -41,7 +43,7 @@ const GitHubUsers = () => {
 
   return (
     <div>
-      <h1 style={{textAlign: "center"}}>GitHub Users</h1>
+      <h1 style={{textAlign: "center", marginTop: "100px"}}>GitHub Users</h1>
       <form className="user_form">
         <div>
           <input
