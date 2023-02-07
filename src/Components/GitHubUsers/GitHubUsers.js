@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import "../AccessCodes/form.css"
+import "../AccessCodes/form.css";
 
 const GitHubUsers = () => {
   const [users, setUsers] = useState([]);
@@ -25,25 +25,9 @@ const GitHubUsers = () => {
     }
   };
 
-  // find Github profile
-  // const findGithubProfile = async () => {
-  //   try {
-  //     const res = await axios.get(`http://localhost:4000/findGithubUserProfile`, {
-  //       params: {
-  //         id: Number(id),
-  //       },
-  //     });
-  //     console.log(res.data.data);
-  //     setProfiles(res.data.data);
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
-
-
   return (
     <div>
-      <h1 style={{textAlign: "center", marginTop: "100px"}}>GitHub Users</h1>
+      <h1 style={{ textAlign: "center", marginTop: "100px" }}>GitHub Users</h1>
       <form className="user_form">
         <div>
           <input
@@ -118,25 +102,6 @@ const GitHubUsers = () => {
       ) : (
         <p className="found">Enter a valid username</p>
       )}
-
-      {/* GitHub Profiles */}
-      {/* <h1>GitHub Profiles</h1>
-      <form className="user_form">
-        <div>
-          <input
-            type="number"
-            name="search"
-            placeholder="Enter Github User Id"
-            value={id}
-            onChange={(e) => setid(e.target.value)}
-            required
-          />
-
-          <button type="button" onClick={findGithubProfile}>
-            Search Profile
-          </button>
-        </div>
-      </form> */}
     </div>
   );
 };

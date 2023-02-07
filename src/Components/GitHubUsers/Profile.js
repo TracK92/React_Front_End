@@ -5,21 +5,19 @@ const Profile = () => {
   const [id, setid] = useState("");
   const [profile, setProfile] = useState([]);
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const res = await axios.get(`https://api.github.com/user/${id}`);
     console.log(res.data);
     setProfile(res.data);
   };
 
-  const findGithubProfile = (e) => {
-    e.preventDefault();
-    handleSubmit();
-  };
-
   return (
     <div>
-      <h1 style={{textAlign: "center", marginTop: "100px"}}>GitHub Profile</h1>
-      <form className="user_form" onSubmit={findGithubProfile}>
+      <h1 style={{ textAlign: "center", marginTop: "100px" }}>
+        GitHub Profile
+      </h1>
+      <form className="user_form" onSubmit={handleSubmit}>
         <div>
           <input
             type="number"
