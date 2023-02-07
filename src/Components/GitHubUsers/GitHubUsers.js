@@ -100,7 +100,7 @@ const GitHubUsers = () => {
           </thead>
         </table>
       ) : (
-        <p className="found">Enter a valid username</p>
+        <p className="found">No results to show...</p>
       )}
     </div>
   );
