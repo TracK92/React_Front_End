@@ -20,6 +20,11 @@ const Navbar = () => {
               GitHub Users
             </button>
           </li>
+          <li>
+            <button onClick={() => navigate("/profile")}>
+              GitHub Profile
+            </button>
+          </li>
         </ul>
       </nav>
     </header>

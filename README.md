@@ -81,6 +81,8 @@
 <div align="center">
   <img src="accessCodes.png" alt="screenshot" width="100%"  height="auto" />
    <img src="githubUsers.png" alt="screenshot" width="100%"  height="auto" />
+      <img src="githubProfiles.png" alt="screenshot" width="100%"  height="auto" />
+
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -146,11 +148,14 @@ N/B: The back-end runs on port 4000 whereas the front-end often runs on port 300
 
 #### Access Codes
 - Ensure that the back-end is running at all times. This message will appear on the terminal if the back-end is running: `Example app listening at http://localhost:4000`. Note that any errors on the front-end may cause the back-end to stop running. If this happens, you will need to restart the back-end. Use the following commands: ```Ctrl + C``` to stop the back-end and ```npm run start``` to start the back-end again.
-- On the front-end, there is a navigation bar (see the preview above) that contains links to the two pages. The Access Codes is the first page. On this page, you will enter a phone number(use +254726993667 as this number is verified by Twilio and, therefore, will not throw any errors. I have console logged the data, which also includes the auto-generated access code). Once you click the "Create Access Code" button, check the console for the pertinent data. Insert the access code in the second input field and click the "Validate Access Code" button. You can test the API by entering different access codes.
+- On the front-end, there is a navigation bar (see the preview above) that contains links to the three pages. The Access Codes is the first page. On this page, you will enter a phone number(use +254726993667 as this number is verified by Twilio and, therefore, will not throw any errors. I have console logged the data, which also includes the auto-generated access code). Once you click the "Create Access Code" button, check the console for the pertinent data. Insert the access code in the second input field and click the "Validate Access Code" button. You can test the API by entering different access codes.
 
 #### GitHub Users
 - On the front-end, click on the GitHub Users link on the navigation bar. You will see input fields: username, Page, and Per Page. You can filter the list by name, page, and per_page parameters. The default values are: name = "", page = 1, and per_page = 10. You can change these values and click the "Search" button to see the results. 
 N/B: Ensure that the back-end is still running, particularly if you run into any errors.
+
+#### GitHub Profiles
+- On the front-end, click on the GitHub Profile link on the navigation bar. You will see an input field for id numbers. Enter any number and click on the search profile icon to see which user owns that particular GitHub profile. The results appear in a table below the input section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

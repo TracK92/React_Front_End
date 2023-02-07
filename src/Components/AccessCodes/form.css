@@ -1,5 +1,6 @@
 .codes_form {
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: 100px;
   padding: 20px;
   display: flex;
   flex-direction: column;
